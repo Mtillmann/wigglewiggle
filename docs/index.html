@@ -193,6 +193,11 @@
             })
         })    
     </script>
+    <style>
+        #readme-content a{
+            display:none;
+        }
+    </style>
 
 </head>
 <body>
@@ -215,10 +220,11 @@
         <div class="col-6 col-md-3">
             <button class="btn-lg w-100 btn btn-primary" id="button">trigger now</button>
         </div>
-        <div class="col-12">
+        <div class="col-12" id="readme-content">
             <h1>🎶my viewport don't wiggle wiggle, it snaps🎵</h1>
 <p>This small script prevents people from resizing the browser windows as a means of testing responsive web design. I wrote
 a similar script some 10 years ago and recently remembered it when the topic came up.</p>
+<p><a href="https://mtillmann.github.io/wigglewiggle/">See demo here</a></p>
 <h2>Why?</h2>
 <p>Sometimes features like background visuals or viewport-size related DOM juggling will only be run or initialized once on
 document load. When the viewport is resized without reloading the document, those feature can have a state that's not

@@ -3,6 +3,8 @@
 This small script prevents people from resizing the browser windows as a means of testing responsive web design. I wrote
 a similar script some 10 years ago and recently remembered it when the topic came up.
 
+[See demo here](https://mtillmann.github.io/wigglewiggle/)
+
 ## Why?
 
 Sometimes features like background visuals or viewport-size related DOM juggling will only be run or initialized once on

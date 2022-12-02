@@ -37,6 +37,11 @@ fs.writeFileSync(__dirname + '/docs/index.html', `
             })
         })    
     </script>
+    <style>
+        #readme-content a{
+            display:none;
+        }
+    </style>
 
 </head>
 <body>
@@ -59,7 +64,7 @@ fs.writeFileSync(__dirname + '/docs/index.html', `
         <div class="col-6 col-md-3">
             <button class="btn-lg w-100 btn btn-primary" id="button">trigger now</button>
         </div>
-        <div class="col-12">
+        <div class="col-12" id="readme-content">
             ${md.render(fs.readFileSync(__dirname + '/readme.md', 'utf-8')).replace('<table', '<table class="table table-sm table-bordered"')}
         </div>
     </div>
